@@ -1,0 +1,6 @@
+# Neural-Coding
+The exercise is based on Matlab dataset which is attached. The data was collected by measuring the response of retinal ganglion cells by a multi electrode array while the retina is being stimulated by light. The stimulus is very simple, light turn on and off every second.
+A brief description of data structure: there are two variables, TT and StimTime. The vector TT contains the time stamps of the AP of each neuron in the field sp. That is, TT(1).sp contains the AP time stamps of the first neurons and TT(2).sp(1) is the first AP of the second. Time resolution is 1/10000. For example, an AP that was generated at time 01021 took place 1.5125 after the beginning of the experiment. StimTime contain the time stamps of turning the light off. So if time went off at 0.9931 sec after experiment start, then the first entry at StimTime sgould be 9931. Light goes on one second after it was turned off, that is for the first time it occurred at StimTime(1)+10000.
+1. Generate PSTH and Raster Plot for all cells. Add to the figure the light intensity curve.
+2. Characterize the response patterns of each cell. Do you notice different patterns?
+3. Get an estimate of the firing rate as function of time while using rectangle and Gaussian time windows. What are the differences?
